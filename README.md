@@ -5,6 +5,7 @@
 Clone the Repository:
 ```bash
 git clone https://github.com/justjaiom/website-template.git
+# if not Jaiom, Copyhttp clone link in the REPO home page
 ```
 
 Navigate into the Repository Directory:
@@ -42,6 +43,6 @@ npm install
 ```
 
 Run files in local server:
-'''bash
+```bash
 npm run dev
-'''
+```
