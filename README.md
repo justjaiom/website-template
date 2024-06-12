@@ -32,4 +32,16 @@ Push the code to the new repository
 git add .
 git commit -m "Initial commit"
 git push -u origin main
-111
+```
+
+When you load the files in V.S. code, make sure you run this command
+```bash
+npm install
+
+#you may see that there are vulnerabilities if so follow the terminal prompts
+```
+
+Run files in local server:
+'''bash
+npm run dev
+'''
