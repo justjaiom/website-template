@@ -5,7 +5,7 @@
 Clone the Repository:
 ```bash
 git clone https://github.com/justjaiom/website-template.git
-# if not Jaiom, Copyhttp clone link in the REPO home page
+# if not Jaiom, Copy http clone link in the REPO home page
 ```
 
 Navigate into the Repository Directory:

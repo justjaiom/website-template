@@ -216,38 +216,38 @@
   <script>
 
         
-    function SendMail() {
-      var params = {
-        name: document.getElementById("full_name").value,
-        email: document.getElementById("email").value,
-        adress: document.getElementById("address").value,
-        city: document.getElementById("city").value,
-        message: document.getElementById("howCanWeHelp").value,
-      };
+  //   function SendMail() {
+  //     var params = {
+  //       name: document.getElementById("full_name").value,
+  //       email: document.getElementById("email").value,
+  //       adress: document.getElementById("address").value,
+  //       city: document.getElementById("city").value,
+  //       message: document.getElementById("howCanWeHelp").value,
+  //     };
 
-      emailjs.send("service_zdaaydx", "template_xky362p", params).then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
-    }
+  //     emailjs.send("service_zdaaydx", "template_xky362p", params).then(
+  //       function (response) {
+  //         console.log("SUCCESS!", response.status, response.text);
+  //       },
+  //       function (error) {
+  //         console.log("FAILED...", error);
+  //       }
+  //     );
+  //   }
 
-    $("#quotes").on("submit", function (e) {
-      e.preventDefault();
-      SendMail();
-      // Send the form data to the server using fetch API
-      fetch(
-        "https://script.google.com/macros/s/AKfycbwySz_zqGQcwg0_lGD9_tkCGYS14a2aGpTt_Ue2GAnbf_YmuUB_NZxOFYPZ9wV4dJcZ/exec",
-        {
-          method: "POST",
-          body: new FormData(document.getElementById("quotes")),
-        }
-      )
-      document.getElementById("quotes").reset();
-    });
-  </script>
+  //   $("#quotes").on("submit", function (e) {
+  //     e.preventDefault();
+  //     SendMail();
+  //     // Send the form data to the server using fetch API
+  //     fetch(
+  //       "https://script.google.com/macros/s/AKfycbwySz_zqGQcwg0_lGD9_tkCGYS14a2aGpTt_Ue2GAnbf_YmuUB_NZxOFYPZ9wV4dJcZ/exec",
+  //       {
+  //         method: "POST",
+  //         body: new FormData(document.getElementById("quotes")),
+  //       }
+  //     )
+  //     document.getElementById("quotes").reset();
+  //   });
+  // </script>
 
 </section>
